@@ -15,7 +15,7 @@ Acepta peticiones POST para generar un reporte de productos facturados desde MyS
 
 - Instalar node.js
 - Abrir un terminal e instalar yarn `npm install -g yarn`
-- Clonar el repositorio
-- Navegar a donde se clono el repositorio desde el terminal
+- Descargar el [lanzamiento](https://github.com/I-E-A-I-A-I-O/api-reportes/releases) deseado y extraer el archivo
+- Navegar a la carpeta que se extrajo
 - Instalar las dependencias `yarn install --production=true`
 - Ejecutar la api `yarn run start-production`
