@@ -15,7 +15,8 @@
   "scripts": {
     "start": "tsc && node .",
     "build": "tsc",
-    "dev": "tsc -w && nodemon ."
+    "dev": "tsc -w && nodemon .",
+    "start-production": "node ."
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
