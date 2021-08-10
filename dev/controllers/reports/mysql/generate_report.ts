@@ -11,6 +11,9 @@ const sales_report = (req: Request, res: Response, next: NextFunction) => {
     return res.status(400).send("Rango de fechas incompleto.")
   }
   if (from && to) {
+    if (Date.parse(from) > Date.parse(to)) {
+      return res.status(400).send("Rango de fechas invalido.")
+    }
     query += "WHERE fecha BETWEEN ? AND ? "
     reportConstraints.push(from, to)
     and_flag = true
@@ -52,6 +55,9 @@ const invoiced_products_report = (req: Request, res: Response, next: NextFunctio
     return res.status(400).send("Rango de fechas incompleto.")
   }
   if (from && to) {
+    if (Date.parse(from) > Date.parse(to)) {
+      return res.status(400).send("Rango de fechas invalido.")
+    }
     query += "WHERE fac01.fecha BETWEEN ? AND ? "
     reportConstraints.push(from, to)
     and_flag = true
