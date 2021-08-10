@@ -18,4 +18,4 @@ Acepta peticiones POST para generar un reporte de productos facturados desde MyS
 - Descargar el [lanzamiento](https://github.com/I-E-A-I-A-I-O/api-reportes/releases) deseado y extraer el archivo
 - Navegar, desde el terminal, a la carpeta extraida
 - Instalar las dependencias `yarn install --production=true`
-- Ejecutar la api `yarn run start-production`
+- Ejecutar la API `yarn run start-production`
