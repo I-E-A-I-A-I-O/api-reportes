@@ -9,6 +9,14 @@ Acepta peticiones POST para generar un reporte de ventas desde MySQL. Puede reci
 Acepta peticiones POST para generar un reporte de productos facturados desde MySQL. Puede recibir un body formato JSON con el modelo de la forma {"from": Inicio del rango de fechas, "to": Final del rango de fechas, "client": RIF del cliente, "product": Codigo del producto}.
 
 
+- **/dbf/reporte/productos-facturados**
+
+Igual que su contraparte en MySQL, solo que trabaja con los datos alojados en los archivos .dbf
+
+- **/dbf/reporte/ventas**
+
+Igual que su contraparte en MySQL, solo que trabaja con los datos alojados en los archivos .dbf
+
 **Nota**: ***Las fechas deben ser en formato ISO***
 
 # Instalacion
